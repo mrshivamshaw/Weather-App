@@ -1,0 +1,223 @@
+/* body{
+    background-image: url(./assests/thunderstorm-3440450.jpg);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100vh;
+    width: 100vw;
+    overflow-y: hidden;
+} */
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.wrapper{
+    /* background: radial-gradient(circle at 50% 50%, rgba(0, 255, 235, 1) 0%, rgba(7, 108, 187, 1) 100%);
+    background-repeat: no-repeat; */
+    background-image: url(./assests/thunderstorm-3440450.jpg);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 20px;
+    color: white;
+    height: 100vh;
+    width: 100vw;
+    overflow-y: hidden;
+}
+.main-container{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    max-width: 540px;
+}
+
+.weather-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tab-container{
+    display: flex;
+    width: 540px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tab{
+    font-weight: 700;
+    font-size:small;
+    cursor: pointer;
+}
+.current-tab.tab{
+    background-color: rgba(241, 237, 237, 0.664);
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size:small;
+    /* transition: all 200ms; */
+}
+
+.sub-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+}
+.grant-location-container{
+   display: none;
+}
+
+.grant-location-container.active{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.grant-location-container-inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+}
+
+.grant-location-container h1{
+    margin-top: 25px;
+    font-size:x-large;
+    font-weight:bolder;
+}
+
+.grant-location-container p{
+    font-size:small;
+    font-weight:bold;
+    padding:4px 0 25px 0 ;
+}
+.grant-location-container .btn{
+    all: unset;
+    font-weight: bolder;
+    padding: 10px 10px;
+    background-color: rgba(241, 237, 237, 0.546);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.loading-container {
+    display: none;
+}
+
+.loading-container.active {
+    display: flex;
+}
+
+.loading-container p{
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.user-info-container{
+    display: none;
+}
+
+.user-info-container.active{
+    display: flex;
+}
+
+.user-info-container{
+    align-items: center;
+    gap: 10px ;
+} 
+
+.user-info-container .name{
+    display: flex;
+    align-items: center;
+    font-size: xx-large;
+    font-weight:300;
+    gap: 20px;
+}
+.user-info-container .name img{
+    height: 25px;
+}
+
+.parameter-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.parameter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(250, 250, 250, 0.418);
+    border-radius: 4px;
+    padding: 0 30px 30px 30px;
+    width: 150px;
+    height: 150px;
+    
+}
+
+.parameter img{
+    width: 60px;
+    height: auto;
+}
+
+.parameter p:first-of-type{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.form-container{
+    display: none;
+
+}
+
+.form-container.active{
+    display: flex;
+    gap: 4px;
+}
+.form-container .btn{
+    appearance: none;
+    all: unset;
+    background-color: rgba(207, 229, 242, 0.664);
+    padding: 8px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    cursor: pointer;
+    align-items: center;
+}
+
+.form-container input{
+    all: unset;
+    background-color: rgba(207, 229, 242, 0.664);
+    padding: 4px 10px;
+    border-radius: 8px;
+    width: 380px;
+    height: 23px;
+    color: rgb(58, 57, 57);
+    font-weight: 400;
+}
+
+.form-container input:focus{
+    outline: 2px solid white;
+}
+
+.form-container input::placeholder{
+    color: rgb(58, 57, 57);
+}
+.form-container ::-ms-input-placeholder{
+    color: rgb(58, 57, 57);
+}

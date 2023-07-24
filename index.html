@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" type="image/x-icon" href="./assests/favicon.ico">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="main-container">
+            <h1 class="head">Weather App</h1>
+            <div class="tab-container">
+                <p class="tab" data-userweather>Your weather</p>
+                <p class="tab" data-searchweather>Search weather</p>
+            </div>
+            <div class="weather-container">
+                <!-- grant container -->
+                <div class="grant-location-container sub-container">
+
+
+
+                    <img src="./assests/location.png" width="80" height="80" loading="lazy">
+                    <h1>Grant location access</h1>
+                    <p>Allow access to get weather information</p>
+                    <button class="btn" data-grantlocation>GRANT ACCESS</button>
+
+
+                </div>
+                <!-- search form -->
+                <form class="form-container" data-searchForm>
+                    <input placeholder="Search city..." data-searchInput>
+                    <button class="btn">
+                        <img src="./assests/search.png" width="15" height="15" loading="lazy">
+                    </button>
+                </form>
+                <!-- loading-screen -->
+                <div class="loading-container sub-container">
+                    <img src="./assests/loading.gif" width="150" height="150">
+                    <p>loading.....</p>
+                </div>
+
+                <!-- Show weather info -->
+                <div class="user-info-container sub-container">
+
+                    <!-- city and flag -->
+                    <div class="name">
+                        <p data-cityName></p>
+                        <img data-country-icon>
+                    </div>
+
+                    <!-- weather description -->
+                    <p data-weatherDesc style="font-weight: 500; "></p>
+
+                    <!-- weather icon -->
+                    <img data-weatherIcon> <!-- sara values  js se milega samjh lo dynamic values hai isiliye-->
+                    <!-- city temperature -->
+                    <p data-temp style="font-weight: bolder; font-size: 50px; margin-bottom: 20px;"></p>
+
+                    <div class="parameter-container">
+                        <!-- card-1 -->
+                        <div class="parameter">
+                            <img src="./assests/wind.png" alt="">
+                            <p>Windspeed</p>
+                            <p data-windspeed></p>
+                        </div>
+                        <div class="parameter">
+                            <img src="./assests/humidity.png" alt="">
+                            <p>Humidity</p>
+                            <p data-humidity></p>
+                        </div>
+                        <div class="parameter">
+                            <img src="./assests/cloud.png" alt="">
+                            <p>Clouds</p>
+                            <p data-clouds></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
